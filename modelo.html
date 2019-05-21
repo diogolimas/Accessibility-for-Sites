@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!-- indifique sempre que for uma linguagem-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
+    <!--separe em folhas de estilo o css e o comportamento em outro arquivo-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+    <!--indicado que se utilize o framework Bootstrap-->
+
+    <title>Sistema de Modelo de Sítio - Início</title>
+    <!--é interessante que deixe o nome do sistema/sítio e coloque a localização dele
+    Por exemplo, em casos da aba de "notícias", coloque:
+    "Sistema de Modelo de Sítio - notícias"-->
+</head>
+<body>
+    <!--Grande separação: header, main e fotter-->
+    <header>
+        <!--representa o cabeçalho do site - header-->
+        <!--barra de acessibilidade-->
+        <nav id="menu" class="sr-only"> <!--você pode optar por fazer sua própria estilização
+                                porém o Bootstrap tem sua class para isto-->
+            <ul>
+                <!--nessa barra, faça apenas para parte de fato relevantes-->
+                <li><a accesskey=1 href="#navbar">Ir para navbar</a></li>
+                <li><a accesskey=2 href="#main">Ir para conteúdo principal</a></li>
+                <li><a accesskey=3 href="#noticias">Ir para notícias</a></li>
+                <li><a accesskey=4 href="#footer">Ir para o rodapé</a></li>
+            </ul>
+        </nav>
+
+        <figure>
+            <img src="logo" alt="logo site"/> <!--utilize o elemento alt para descrever 
+                                           conteúdo iconográfico - imagem-->
+                                           <!--Feche tags como "img" e "input" mesmo não sendo
+                                            obrigatório ;)-->
+        </figure>
+
+        <nav id="navbar">
+            <ul> 
+                <li>sobre</li>
+                <li>Notícias</li>
+                <li>Mais notícias</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main"> <!--id usado para que a barra de acessibilidade tenha acesso-->
+        <!--representa o conteúdo principal do sítio -->
+        <!--divida o main em seções - tag section-->
+
+        <h1>Modelo para sítios acessíveis</h1>
+        <h2>Pronto e com definições semânticas!</h2>
+        <!--utilize o desencadeamento de tags: h1>h1>h3...-->
+
+        <section id="sobre">
+
+            <h3>Sobre o site</h3>
+            <p>
+                Conteúdo da notícias
+            </p>
+            <!-- em caso de muitas notícias separadas em pequenas seções, faça dessa maneira-->
+            
+        </section>
+        <section id="noticias">
+            <h3>Notícias</h3>
+            <article>
+                <h4>Notícia 1</h4>
+                <p>Conteúdo da notícia</p>
+            </article>
+            <article>
+                <h4>Notícia 2</h4>
+                <p>Conteúdo da notícia</p>
+            </article>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <!--representa o conteúdo do rodapé do site-->
+        <address> <!--utilize a tag adrress para--> 
+            <p>Av. João Maria do Nascimento nº 532, Tabatinga</p>
+        </address>
+        <!--parte complementar que pode ser entendida em separado-->
+        <div role="link"> <!--utilizado o atributo role para a identificação do que se trata o 
+                            o conteúdo da div VAZIA DE SIGNIFICADO-->
+            <a accesskey=5 href="#menu">Ir para o topo</a>
+        </div>
+    </footer>
+
+</body>
+</html>
