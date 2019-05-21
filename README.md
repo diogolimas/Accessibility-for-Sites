@@ -1,4 +1,4 @@
-# indications-for-accessibility
+# Indicações de acessibilidade
 This is indications can be used to sites web, trying make them accessible to all people.
 
 Indicações de acessibilidade para sítio, na tentativa de os deixar de fácil, e possível, acesso para todas as pessoas.
