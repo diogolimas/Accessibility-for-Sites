@@ -12,6 +12,12 @@
             position: absolute;
             left: -999em;
         }
+        .h-0{
+            height: 0;
+            width: 0;
+            overflow: hidden;
+            
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,15 +33,34 @@
         <p class="v-hidden">
             Eu escutei visão escondida
         </p>
+        <!--O elemento fica oculto, mas continua a ocupar o
+        espaço que normalmente ocuparia.-->
         <p class="di-none">
             Eu escutei display none.
-        </p>    
+        </p>
+        <!--
+            O elemento fica oculto e não oculpa espaço
+            -->
+        <p class="h-0">
+            Eu escutei a altura zero e largura 0
+        </p>   
+        <!--
+            O elemento fica oculto e não oculpa espaço
+            --> 
         <p style="text-indent: -999em;">
             Eu escutei text-ident
         </p>
+        <!---
+            Os leitores acessam apenas os elementos inline, 
+            mas o conteúdo fica oculto visualmente
+        -->
         <p class="p-absolute">
             Eu escutei a posição absoluta.
         </p>
+             <!---
+            Os leitores acessam apenas os elementos inline, 
+            mas o conteúdo fica oculto visualmente
+        -->
         
     
 </body>
